@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "94066693453",
+    "firebase_url": "https://ihub-c9d21.firebaseio.com",
+    "project_id": "ihub-c9d21",
+    "storage_bucket": "ihub-c9d21.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94066693453:android:ad013d9294bc6837",
+        "android_client_info": {
+          "package_name": "co.za.openseseme.ihub"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94066693453-r31geemu6cmc8qt8emdmjb9n219b6upb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.za.openseseme.ihub",
+            "certificate_hash": "a02792a7074f4d1ea2b4192458fe2457cd66633b"
+          }
+        },
+        {
+          "client_id": "94066693453-gu4gpb9oruqcmi7dkcufvs5hffd8ft7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAijEA_qIOUAisJCAQkUcrezho6uLVcJbc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94066693453-gu4gpb9oruqcmi7dkcufvs5hffd8ft7l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
