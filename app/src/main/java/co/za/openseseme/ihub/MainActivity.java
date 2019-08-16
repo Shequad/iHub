@@ -109,13 +109,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (result != null) {
 
             if (result.getContents() == null) {
+
+                hideLoading();
+
                 Toast.makeText(this, "No results", Toast.LENGTH_SHORT).show();
             } else {
+
+                //hideLoading();
+
+                final String code = result.getContents();
+
+                Logg.d(TAG, "QR CODE RESULTS: " + code);
 
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        checkCode("1234567890");
+                        checkCode(code);
                     }
                 }, 1000);
 

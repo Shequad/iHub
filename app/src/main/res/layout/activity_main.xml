@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimaryDark"
+        android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,18 +41,33 @@
             android:fontFamily="cursive"
             android:gravity="center_horizontal"
             android:text="Open Sesame"
-            android:textColor="@color/colorPrimaryDark"
+            android:textColor="@color/colorPrimary"
             app:autoSizePresetSizes="@array/auto_size_text_sizes" />
 
-        <TextView
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:autoSizeTextType="uniform"
-            android:gravity="center"
-            android:padding="10dp"
-            android:text="Booked a venue?\nClick the button below to scan your QR Code"
-            app:autoSizePresetSizes="@array/auto_size_text_sizes" />
+            android:padding="8dp">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="4dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Booked a venue?\nClick the button below to scan your QR Code"
+                    android:textSize="20sp" />
+
+            </android.support.v7.widget.CardView>
+        </FrameLayout>
 
         <Button
             android:id="@+id/btnScan"
@@ -64,9 +78,9 @@
             android:layout_marginRight="30dp"
             android:layout_weight="0.05"
             android:autoSizeTextType="uniform"
-            android:background="@drawable/roundedbutton"
+            android:background="@drawable/theme_button"
             android:text="Scan"
-            android:textColor="@color/whiteColor"
+            android:textColor="@color/whiteColor_"
             app:autoSizePresetSizes="@array/auto_size_text_sizes" />
 
     </LinearLayout>

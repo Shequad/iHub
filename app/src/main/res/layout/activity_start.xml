@@ -6,6 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".StartActivity">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/wall" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -26,10 +47,10 @@
         android:id="@+id/btnSetScanner"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/theme_button_stroke"
         android:text="SET AS SCANNER"
-        android:textColor="@color/whiteColor"
+        android:textColor="@color/whiteColor_"
         app:layout_constraintBottom_toTopOf="@+id/btnSetClient"
         app:layout_constraintEnd_toEndOf="@+id/btnSetClient"
         app:layout_constraintStart_toStartOf="@+id/btnSetClient" />
@@ -40,10 +61,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="64dp"
-        android:background="@drawable/roundedbutton"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/theme_button"
         android:text="SET AS CLIENT"
-        android:textColor="@color/whiteColor"
+        android:textColor="@color/whiteColor_"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
